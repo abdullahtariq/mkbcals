@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Makesbridge</title>
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="img/favicon.ico">
+    
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" >   
+
+</head>
+
+<body>
+<div class="topbar">
+        <div style="text-align:center;" class="main_wrap">
+          <div class="clear"></div>
+            <a title="Makesbridge" href="http://www.makesbridge.com">
+                    <img style="width: 204px; border:0; height: 47px;" src="http://www.makesbridge.com/wp-content/themes/mksteam/images/logo.png" alt="">
+                </a>
+                <div class="clear"></div>
+        </div>
+    </div>
+
+
+	<div id="calculator">
+    
+    	<div class="top">
+        	<h1>Mass Email Quotation Tool</h1>
+          <div>
+          <label>Enter monthly email volume</label>
+              <input type="text" id="rangeValue" placeholder="0" maxlength="10" name="" value="" class='numberonly'>
+             <img src="img/loading.gif" class="showloading showLoadingLeft" style="display:none;">
+            </div>
+        </div>
+    
+    		<br/>
+        
+        <div class="calculator-wrap" >   
+				<h2 class="hideObj">Email</h2>
+    
+                        <div class="btn-group price_panel email hideObj" data-toggle="buttons">
+                          <label class="btn btn-primary emailtype active" id="basicBtn">
+                            <input type="radio" name="options" id="option1" checked> 
+                            <h3>Basic</h3>
+                            <p><span style="text-transform:none;">Send up to </span><span id="emails">0</span> emails / mo</p>
+                            <span class="price" id="basic">$0</span>
+                          </label>
+                          
+                          <label class="btn btn-primary emailtype" id="unlimitedBtn">
+                            <input type="radio" name="options" id="option1" > 
+                            <h3>Unlimited</h3>
+                            <p>Send unlimited emails</p>
+                            <span class="price" id="unlimited">$0</span>
+                          </label>
+                          
+                          
+                          
+                          
+                        </div>
+
+    
+				<h2 class="hideObj">Automation</h2>
+    
+                        <div class="btn-group price_panel automation hideObj" data-toggle="buttons">
+                          <label class="btn btn-primary active" id="customBtn" style="z-index: 3;">
+                            <input type="radio" name="options" id="customRadio" checked> 
+                            <h3>Custom</h3>
+                            <div class="clearfix"></div>
+                                <div class="a_row">
+										<div class="dropdown">
+                                          <a data-toggle="dropdown" id="ntdropdown" href="#">0<span class="caret"></span></a>
+                                         <ul class="dropdown-menu dropdownNT" role="menu" aria-labelledby="dLabel">
+                                              <li role="presentation">
+                                                <a href="#" tabindex="-1" role="menuitem">0</a></li>
+                                                <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">1</a></li>
+                                                <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">2</a></li>
+                                                <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">3</a>
+                                                </li>
+                                                <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">4</a>
+                                                </li>
+                                                <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">5</a>
+                                                </li>
+                                                <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">6</a>
+                                                </li>
+                                                <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">7</a>
+                                                </li>
+                                                <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">8</a>
+                                                </li><li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">9</a>
+                                                </li><li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">10</a>
+                                                </li><li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">11</a>
+                                                </li><li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">12</a>
+                                                </li><li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">13</a>
+                                                </li><li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">14</a>
+                                                </li><li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">15</a>
+                                                </li>
+                                          </ul>
+                                        </div>
+                                        <h4>Nurture Tracks</h4>
+                                        <span class="price" id="nurturePrice">$<i>0</i></span>
+                                </div>  <!-- a_row -->
+                                
+                                <div class="a_row">
+										<div class="dropdown">
+                                          <a data-toggle="dropdown" id="botdropdown" href="#">0<span class="caret"></span></a>
+                                          <ul class="dropdown-menu dropdownAB" role="menu" aria-labelledby="dLabel">
+                                            	<li role="presentation">
+                                                <a href="#" tabindex="-1" role="menuitem">0</a></li>
+                                                <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">1</a></li>
+                                                <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">2</a></li>
+                                                <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">3</a>
+                                                </li>
+                                                <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">4</a>
+                                                </li> <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">5</a>
+                                                </li> <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">6</a>
+                                                </li> <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">7</a>
+                                                </li> <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">8</a>
+                                                </li> <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">9</a>
+                                                </li> <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">10</a>
+                                                </li> <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">11</a>
+                                                </li> <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">12</a>
+                                                </li> <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">13</a>
+                                                </li> <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">14</a>
+                                                </li> <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">15</a>
+                                                </li>
+                                          </ul>
+                                        </div>
+                                        <h4 >Autobots</h4>
+										<span class="price" id="autobotPrice">$<i>0</i></span>
+                                </div>  <!-- a_row -->
+                                
+                            
+                            
+                          </label>
+                          <label class="step2-lists" style="position:absolute;">
+                                  <span style="display: block;left: 196px;top: 45px;" class="fieldinfo">
+                                    <i class="icon"></i><em class="wrapword" style="font-size: 16px;line-height: 19px;z-index: 108;width: 300px">Within an hour you can start dripping<br> emails to new prospects and customers!<br><a href="http://www.makesbridge.com/test/automation#nurture" target="_blank">View Details »</a></em></span>
+                                </label><!-- I for Nurture Track -->
+                          <label class="step2-lists" style="position:absolute;">
+                                          <span style="display: block;  left: 153px;top: 120px;" class="fieldinfo">
+                                            <i class="icon"></i>
+                                            <em class="wrapword" style="font-size:16px;line-height: 19px;z-index: 108;width: 300px">These cute little guys work day and night to keep your business moving..
+                                              <br><a href="http://www.makesbridge.com/test/automation#autobot" target="_blank">View Details »</a>
+                                            </em></span>
+                                          </label><!-- I for Autobot -->
+                          <label class="btn btn-primary" id="bundleBtn">
+                            <input type="radio" name="options" id="option1" > 
+                            	<h3>Bundle</h3>
+                            	<div class="clearfix"></div>
+                            	
+                                <div class="bundle">
+                                	<div class="save"><span>Save</span> <h4 id="saves">$0</h4></div>
+                                	<h2 id='btype'><span>For</span> Small Business</h2>
+                                
+                                	<p style="margin-top:28px;"><span id="ntbundle">0</span> Nurture Tracks</p>
+                                	<p><span id="botbundle">0</span> Autobots</p>
+                                
+                                	<span class="price" id="total">$<i>0</i></span>
+                                </div>
+                            
+                          </label>
+                          
+                          
+                          
+                          
+                        </div>
+    
+    
+
+       
+           <div class="total">
+           		<div>
+                	<span class="contacts "><strong>0</strong> Emails Sent/Month</span>
+                	<span class="mails hideObj"><strong>0</strong> Emails</span>
+                    <span class="nt hideObj"><strong>0</strong> Nurture Track(s)</span>
+                    <span class="auto hideObj"><strong>0</strong> Autobot(s)</span>
+           		</div>
+           		
+                <div class="total_price">
+                	<span>Total</span>
+                   <img src="img/loading.gif" class="showloading" style="display:none;"><h3 id="total_cost"> $<i>0</i> </h3>
+                </div>
+                
+            <input type="hidden" id="ntPerPrice">
+            <input type="hidden" id="botPerPrice">
+           </div> <!--  -->
+    
+            <div class="footer-warp">
+                <form action="http://www.makesbridge.com/custom-price" target="_parent" method="post" id="checkoutForm">
+                <input type="hidden" id="cartPrice" name="cartPrice" value="0">
+                <input type="hidden" id="cartDetails" name="cartDetails" >
+                <input type="hidden" id="cartUC" name="cartUC" >
+                <input type="hidden" id="cartEs" name="cartEs" >
+                <input type="hidden" id="cartNA" name="cartNA" >
+                
+                <button type="button" id="cartCheckout">Proceed to checkout</button>
+                </form>
+            </div><!-- Footer Wrap -->
+    </div> <!--End of Calculator Wrap -->
+    
+    <div class="contact-wrap" style="display:none;">
+        <div>
+          <h2>Wow, congratulations on building your database.<br>We need to talk!</h2>
+          <a href="https://server.iad.liveperson.net/hc/69791877/?cmd=file&file=visitorWantsToChat&site=69791877&byhref=1&imageUrl=https://server.iad.liveperson.net/hcp/Gallery/ChatButton-Gallery/English/General/1a/"><div class="getstarted">Chat Now</div></a>
+          <h3>or<br>Call Us: <span>408.740.8224</span></h3>
+        </div>
+    </div><!-- Contact div -->
+    
+    
+    
+    
+    </div>
+
+    <script src="js/jquery.js"></script> 
+        <script src="js/bootstrap.js"></script>
+	<script src="js/calc_scripts.js"></script>
+
+
+</body>
+</html>
