@@ -1,3 +1,7 @@
+<?php 
+    unset($_SESSION['customprice']);
+    unset($_SESSION['cartDetails']);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,8 +24,8 @@
 <div class="topbar">
         <div style="text-align:center;" class="main_wrap">
           <div class="clear"></div>
-            <a title="Makesbridge" href="http://www.makesbridge.com">
-                    <img style="width: 204px; border:0; height: 47px;" src="http://www.makesbridge.com/wp-content/themes/mksteam/images/logo.png" alt="">
+            <a title="Makesbridge" href="//www.makesbridge.com">
+                    <img style="width: 204px; border:0; height: 47px;" src="https://www.makesbridge.com/wp-content/themes/mks15/images/logo.png" alt="">
                 </a>
                 <div class="clear"></div>
         </div>
@@ -74,8 +78,8 @@
                             <h3>Custom</h3>
                             <div class="clearfix"></div>
                                 <div class="a_row">
-                                  <span style="display: block;left: 190px;top: 24px;" class="fieldinfo">
-                                    <i class="icon"></i><em class="wrapword" style="font-size: 16px;line-height: 19px;z-index: 108;width: 300px;white-space:inherit;">Within an hour you can start dripping<br> emails to new prospects and customers!<br><a href="http://www.makesbridge.com/automation#nurture" target="_blank">View Details »</a></em></span>
+                                  <span style="display: block;left: 190px;top: 7px;" class="fieldinfo">
+                                    <i class="icon"></i><em class="wrapword" style="font-size: 16px;line-height: 19px;z-index: 108;width: 300px;white-space:inherit;">Within an hour you can start dripping<br> emails to new prospects and customers!<br><a href="//www.makesbridge.com/automation#nurture" target="_blank">View Details »</a></em></span>
 										<div class="dropdown">
                                           <a data-toggle="dropdown" id="ntdropdown" href="#">0<span class="caret"></span></a>
                                          <ul class="dropdown-menu dropdownNT" role="menu" aria-labelledby="dLabel">
@@ -122,12 +126,60 @@
                                         <h4>Nurture Tracks</h4>
                                         <span class="price" id="nurturePrice">$<i>0</i></span>
                                 </div>  <!-- a_row -->
-                                
                                 <div class="a_row">
-                                  <span style="display: block;  left: 150px;top: 25px;" class="fieldinfo">
+                                  <span style="display: block; left: 160px; top: 7px;" class="fieldinfo">
+                                    <i class="icon"></i><em class="wrapword" style="font-size: 16px;line-height: 19px;z-index: 108;width: 300px;white-space:inherit;">Within an hour you can start dripping<br> emails to new prospects and customers!<br><a href="//www.makesbridge.com/automation#nurture" target="_blank">View Details »</a></em></span>
+                    <div class="dropdown">
+                                          <a data-toggle="dropdown" id="wfdropdown" href="#">0<span class="caret"></span></a>
+                                         <ul class="dropdown-menu dropdownWF" role="menu" aria-labelledby="dLabel">
+                                              <li role="presentation">
+                                                <a href="#" tabindex="-1" role="menuitem">0</a></li>
+                                                <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">1</a></li>
+                                                <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">2</a></li>
+                                                <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">3</a>
+                                                </li>
+                                                <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">4</a>
+                                                </li>
+                                                <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">5</a>
+                                                </li>
+                                                <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">6</a>
+                                                </li>
+                                                <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">7</a>
+                                                </li>
+                                                <li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">8</a>
+                                                </li><li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">9</a>
+                                                </li><li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">10</a>
+                                                </li><li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">11</a>
+                                                </li><li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">12</a>
+                                                </li><li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">13</a>
+                                                </li><li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">14</a>
+                                                </li><li role="presentation">
+                                                  <a href="#" tabindex="-1" role="menuitem">15</a>
+                                                </li>
+                                          </ul>
+                                        </div>
+                                        <h4>Workflows</h4>
+                                        <span class="price" id="wfPrice">$<i>0</i></span>
+                                </div>  <!-- a_row -->
+                                <div class="a_row">
+                                  <span  style="display: block; top: 5px; left: 148px;" class="fieldinfo">
                                             <i class="icon"></i>
                                             <em class="wrapword" style="font-size:16px;line-height: 19px;z-index: 108;width: 300px">These cute little guys work day and<br> night to keep your business moving..
-                                              <br><a href="http://www.makesbridge.com/automation#autobot" target="_blank">View Details »</a>
+                                              <br><a href="//www.makesbridge.com/automation#autobot" target="_blank">View Details »</a>
                                             </em></span>
 										<div class="dropdown">
                                           <a data-toggle="dropdown" id="botdropdown" href="#">0<span class="caret"></span></a>
@@ -207,6 +259,7 @@
                 	<span class="contacts"><strong>0</strong> Unique Contacts</span>
                 	<span class="mails"><strong>0</strong> Emails/mo</span>
                     <span class="nt"><strong>0</strong> Nurture Track(s)</span>
+                    <span class="wf"><strong>0</strong> Workflow(s)</span>
                     <span class="auto"><strong>0</strong> Autobot(s)</span>
            		</div>
            		

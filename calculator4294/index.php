@@ -1,3 +1,7 @@
+<?php 
+    unset($_SESSION['customprice']);
+    unset($_SESSION['cartDetails']);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +9,11 @@
     <title>Makesbridge</title>
     
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="description" content="">
     <meta name="author" content="">    
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <link rel="shortcut icon" href="img/favicon.ico">
-    
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" >
     <link rel="stylesheet" href="css/animate.css" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" >   
@@ -21,7 +25,7 @@
         <div style="text-align:center;" class="main_wrap">
           <div class="clear"></div>
             <a title="Makesbridge" href="http://www.makesbridge.com">
-                    <img style="width: 204px; border:0; height: 47px;" src="http://www.makesbridge.com/wp-content/themes/mksteam/images/logo.png" alt="">
+                    <img style="width: 204px; border:0; height: 47px;" src="https://www.makesbridge.com/wp-content/themes/mks15/images/logo.png" alt="">
                 </a>
                 <div class="clear"></div>
         </div>
@@ -74,8 +78,8 @@
                             <h3>Custom</h3>
                             <div class="clearfix"></div>
                                 <div class="a_row">
-                                  <span style="display: block;left: 190px;top: 24px;" class="fieldinfo">
-                                    <i class="icon"></i><em class="wrapword" style="font-size: 16px;line-height: 19px;z-index: 108;width: 300px;white-space:inherit;">Within an hour you can start dripping<br> emails to new prospects and customers!<br><a href="http://www.makesbridge.com/automation#nurture" target="_blank">View Details »</a></em></span>
+                                  <span style="display: block;left: 155px;top: 36px;" class="fieldinfo">
+                                    <i class="icon"></i><em class="wrapword" style="font-size: 16px;line-height: 19px;z-index: 108;width: 300px;white-space: inherit;">Within an hour you can start dripping<br> emails to new prospects and customers!<br><a href="//www.makesbridge.com/test/automation#nurture" target="_blank">View Details »</a></em></span>
 										<div class="dropdown">
                                           <a data-toggle="dropdown" id="ntdropdown" href="#">0<span class="caret"></span></a>
                                          <ul class="dropdown-menu dropdownNT" role="menu" aria-labelledby="dLabel">
@@ -119,15 +123,15 @@
                                                 </li>
                                           </ul>
                                         </div>
-                                        <h4>Nurture Tracks</h4>
+                                        <h4 style="line-height: 22px;">Nurture Tracks / <br/> Workflows</h4>
                                         <span class="price" id="nurturePrice">$<i>0</i></span>
                                 </div>  <!-- a_row -->
                                 
                                 <div class="a_row">
                                   <span style="display: block;  left: 150px;top: 25px;" class="fieldinfo">
                                             <i class="icon"></i>
-                                            <em class="wrapword" style="font-size:16px;line-height: 19px;z-index: 108;width: 300px">These cute little guys work day and<br> night to keep your business moving..
-                                              <br><a href="http://www.makesbridge.com/automation#autobot" target="_blank">View Details »</a>
+                                            <em class="wrapword" style="font-size:16px;line-height: 19px;z-index: 108;width: 300px">These cute little guys work day and <br/>night to keep your business moving..
+                                              <br><a href="//www.makesbridge.com/test/automation#autobot" target="_blank">View Details »</a>
                                             </em></span>
 										<div class="dropdown">
                                           <a data-toggle="dropdown" id="botdropdown" href="#">0<span class="caret"></span></a>
@@ -185,7 +189,7 @@
                                 	<div class="save"><span>Save</span> <h4 id="saves">$0</h4></div>
                                 	<h2 id='btype'><span>For</span> Small Business</h2>
                                 
-                                	<p style="margin-top:28px;"><span id="ntbundle">0</span> Nurture Tracks</p>
+                                	<p style="margin-top:28px;"><span id="ntbundle">0</span> Nurture Tracks / Workflows</p>
                                 	<p><span id="botbundle">0</span> Autobots</p>
                                 
                                 	<span class="price" id="total">$<i>0</i></span>
@@ -206,7 +210,7 @@
            		<div>
                 	<span class="contacts"><strong>0</strong> Unique Contacts</span>
                 	<span class="mails"><strong>0</strong> Emails/mo</span>
-                    <span class="nt"><strong>0</strong> Nurture Track(s)</span>
+                    <span class="nt"><strong>0</strong> Nurture Track(s) / Workflow(s)</span>
                     <span class="auto"><strong>0</strong> Autobot(s)</span>
            		</div>
            		
@@ -219,7 +223,7 @@
             <input type="hidden" id="botPerPrice">
            </div> <!--  -->
     
-            <div class="footer-warp">
+            <div class="footer-warp" style="position:relative">
                 <form action="//www.makesbridge.com/custom-price" target="_parent" method="post" id="checkoutForm">
                 <input type="hidden" id="cartPrice" name="cartPrice" value="0">
                 <input type="hidden" id="cartDetails" name="cartDetails" >
@@ -229,6 +233,7 @@
                 
                 <button type="button" id="cartCheckout">Proceed to checkout</button>
                 </form>
+				<div class="AuthorizeNetSeal" style="position: absolute;right: 121px;top: 3px;"> <script type="text/javascript" language="javascript">var ANS_customer_id="eb45cde6-faf9-4e40-a66a-4c7173522d58";</script> <script type="text/javascript" language="javascript" src="https://verify.authorize.net/anetseal/seal.js" ></script></div>
             </div><!-- Footer Wrap -->
     </div> <!--End of Calculator Wrap -->
     

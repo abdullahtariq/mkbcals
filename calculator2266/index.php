@@ -1,3 +1,7 @@
+<?php 
+    unset($_SESSION['customprice']);
+    unset($_SESSION['cartDetails']);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,8 +24,8 @@
 <div class="topbar">
         <div style="text-align:center;" class="main_wrap">
           <div class="clear"></div>
-            <a title="Makesbridge" href="http://www.makesbridge.com">
-                    <img style="width: 204px; border:0; height: 47px;" src="http://www.makesbridge.com/wp-content/themes/mksteam/images/logo.png" alt="">
+            <a title="Makesbridge" href="https://www.makesbridge.com">
+                    <img style="width: 204px; border:0; height: 47px;" src="https://www.makesbridge.com/wp-content/themes/mks15/images/logo.png" alt="">
                 </a>
                 <div class="clear"></div>
         </div>
@@ -75,7 +79,7 @@
                             <div class="clearfix"></div>
                                 <div class="a_row">
                                   <span style="display: block;left: 190px;top: 24px;" class="fieldinfo">
-                                    <i class="icon"></i><em class="wrapword" style="font-size: 16px;line-height: 19px;z-index: 108;width: 300px;white-space:inherit;">Within an hour you can start dripping<br> emails to new prospects and customers!<br><a href="http://www.makesbridge.com/automation#nurture" target="_blank">View Details »</a></em></span>
+                                    <i class="icon"></i><em class="wrapword" style="font-size: 16px;line-height: 19px;z-index: 108;width: 300px;white-space:inherit;">Within an hour you can start dripping<br> emails to new prospects and customers!<br><a href="https://www.makesbridge.com/automation#nurture" target="_blank">View Details »</a></em></span>
 										<div class="dropdown">
                                           <a data-toggle="dropdown" id="ntdropdown" href="#">0<span class="caret"></span></a>
                                          <ul class="dropdown-menu dropdownNT" role="menu" aria-labelledby="dLabel">
@@ -127,7 +131,7 @@
                                   <span style="display: block;  left: 150px;top: 25px;" class="fieldinfo">
                                             <i class="icon"></i>
                                             <em class="wrapword" style="font-size:16px;line-height: 19px;z-index: 108;width: 300px">These cute little guys work day and<br> night to keep your business moving..
-                                              <br><a href="http://www.makesbridge.com/automation#autobot" target="_blank">View Details »</a>
+                                              <br><a href="//www.makesbridge.com/automation#autobot" target="_blank">View Details »</a>
                                             </em></span>
 										<div class="dropdown">
                                           <a data-toggle="dropdown" id="botdropdown" href="#">0<span class="caret"></span></a>
